@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Head from 'next/head'
 
 export default function Home() {
+  let test: string = "私の名前は~~です~";
   return (
       <div>
         <div className="container">
@@ -16,7 +18,7 @@ export default function Home() {
           <section> 
             <div className="content">
               <h1>My PortFolio</h1>
-              <h3>私の名前は~~です。</h3>
+              <h3>this.test</h3>
               <div className="profile">
                 <div className="profile-text">
                   <p>名前：山田太郎</p>
