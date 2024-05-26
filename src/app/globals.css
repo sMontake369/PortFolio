@@ -62,7 +62,7 @@ section .content {
 }
 
 section .content h1 {
-  font-size: 55px;
+  font-size: 60px;
 }
 
 section .content h3 {
@@ -70,12 +70,12 @@ section .content h3 {
 }
 
 section .content p {
-  font-size: 18px;
+  font-size: 20x;
   color: var(--color-paragraph);
 }
 
 .content button {
-  margin-top: 30px;
+  margin-top: 20px;
   background-color: var(--color-button);
   border-radius: 5px;
   color: var(--color-button-text);
