@@ -1,15 +1,19 @@
 import React, {FC} from "react";
 import { NextPage } from 'next';
 import "./login.css";
+import NavBar from "../_components/header";
 
 const HomePage: NextPage = () => 
 {
     return (
-        <div className="login-header">
-            <div className="login">
-                <FormItem string1="メールアドレス" string2="パスワード" />
+        <>
+            <NavBar /> 
+            <div className="login-header">
+                <div className="login">
+                    <FormItem string1="メールアドレス" string2="パスワード" />
+                </div>
             </div>
-        </div>
+        </>
     )
 }
 

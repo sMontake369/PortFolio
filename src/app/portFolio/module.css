@@ -1,0 +1,89 @@
+.name {
+  padding: 80px;
+  font-size: 60px;
+  text-align: center;
+  color: #232323;
+}
+
+.portFolioList {
+  text-align: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  text-align: left;
+  width: auto;
+  margin: 20px;
+  aspect-ratio: 1/0.55;
+  background-color: #efefef00;
+  border: solid 0.1px #dcdcdc;/*線*/
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.2s ease 0s;
+  overflow: hidden;
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.info {
+  width: auto;
+  height: auto;
+  font-size: 20px;
+  padding: 30px;
+}
+
+.contact {
+  width: 100%;
+  height: 20%;
+  margin-left: 80%;
+  font-size: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.container:hover {
+box-shadow: 10px 10px 10px 0.5px #e7e7e7;
+transform: translateY(-0.1875em);
+}
+
+.profile {
+  width: auto;
+  height: auto;
+}
+
+.profile h3 {
+  font-size: 30px;
+  color: #232323;
+  margin-top: 1.5px;
+}
+
+.profile h1{
+  font-size: 60px;
+  color: #232323;
+}
+
+
+.qualification {
+  padding: 0.1em 0.1em;
+  margin: 1px 0em;
+  font-weight: bold;
+  color: #000000;/*文字色*/
+  background: #FFF;
+  border-bottom: 2px solid black;
+  display:inline-block;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.border {
+  margin: 2em 0;
+  border-bottom: 3px solid black;
+}
+
+.container a {
+  text-decoration: none; /* リンクの下線を除去 */
+  color: inherit; /* リンクの色を継承 */
+}
