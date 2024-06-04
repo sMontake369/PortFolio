@@ -16,8 +16,11 @@
 
 .container {
   text-align: left;
-  width: auto;
+  width: 90%;
+  height: 100%;
   margin: 20px;
+  padding: 10px;
+  height: 100%;
   aspect-ratio: 1/0.55;
   background-color: #efefef00;
   border: solid 0.1px #dcdcdc;/*線*/
@@ -28,11 +31,9 @@
   flex-wrap: wrap;
 }
 
-.info {
-  width: auto;
-  height: auto;
-  font-size: 20px;
-  padding: 30px;
+.container:hover {
+  box-shadow: 10px 10px 10px 0.5px #e7e7e7;
+  transform: translateY(-0.1875em);
 }
 
 .contact {
@@ -44,27 +45,25 @@
   align-items: flex-end;
 }
 
-.container:hover {
-box-shadow: 10px 10px 10px 0.5px #e7e7e7;
-transform: translateY(-0.1875em);
-}
-
 .profile {
   width: auto;
   height: auto;
 }
 
+.profile h1{
+  display: flex;
+  align-items: center;
+  font-size: 50px;
+  color: #232323;
+  line-height: 55px;
+}
+
 .profile h3 {
-  font-size: 30px;
+  font-size: 25px;
+  line-height: 30px;
   color: #232323;
   margin-top: 1.5px;
 }
-
-.profile h1{
-  font-size: 60px;
-  color: #232323;
-}
-
 
 .qualification {
   padding: 0.1em 0.1em;

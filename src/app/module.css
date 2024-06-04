@@ -1,6 +1,7 @@
 .backGround {
+    position: absolute;
     width: 100%;
-    min-height: 100vh;
+    height: 100%;
     background: linear-gradient(#43b28b, #1c44bd);
 }
 
@@ -19,7 +20,6 @@
 
 body {
     margin: 0;
-    margin-top: 10px;
 }
 
 .homeContainer {

@@ -1,11 +1,9 @@
-import Image from "next/image";
 import NavBar from "./_components/header";
 import "./module.css";
 import Avatar from "boring-avatars";
 import { generateColors } from "./portFolio/page";
 
 function Home() {
-  let test: string = "私の名前は~~です~";
   return (
     <div className="backGround">
       <NavBar>
