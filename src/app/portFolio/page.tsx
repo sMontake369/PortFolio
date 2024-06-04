@@ -7,7 +7,7 @@ export default function portFolio()
 {
     return (
         <NavBar>
-            <h1 className="name">ポートフォリオ一覧</h1>
+            <h1 className="subTitle">ポートフォリオ一覧</h1>
             <div className="portFolioList">
                 {portFolioMock.map((portFolio) => (
                     <div className="container" key={portFolio.userID}>

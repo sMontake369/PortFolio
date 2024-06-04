@@ -1,30 +1,38 @@
 .header {
-    top:2%;
-    left:1%;
+    top:20px;
     z-index: 1000;
-    width: 98%;
-    height: 7.5%;
-    display: flex;
-    text-align: center;
-    position: absolute;
+    width: 95%;
+    max-width: 2500px;
+    min-width: 500px;
+    height: 80px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
     background-color: #e2e3e1;
-    border-radius: 30px;/*角の丸み*/
-    box-shadow: 5px 5px 10px 1px #dfdfdf;
+    opacity: 0.8;
+    border-radius: 50px;/*角の丸み*/
+    border: solid 0px #dcdcdc;/*線*/
+    box-shadow: 5px 5px 5px 0.1px #e4e4e4;
 }
 
 .title {
     height: 100%;
     display: flex;
     align-items: center;
+    align-items: center;
     margin-left: 15px;
 }
 
 .title a{
-    font-size: 20px;
+    font-size: 200%;
     font-weight: bold;
     text-decoration: none;
 }
 
 .main {
-    margin-top: 15%;
+    margin-top: 130px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
 }

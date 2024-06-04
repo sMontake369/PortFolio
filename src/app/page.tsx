@@ -6,6 +6,8 @@ import { generateColors } from "./portFolio/page";
 function Home() {
   return (
     <div className="backGround">
+      <div className= "rectangle"></div>
+      <div className= "circle"></div>
       <NavBar>
         <h1> Web Site Title</h1>
         <h3>自分のラーニングポートフォリオが作れるサイト</h3>
@@ -62,6 +64,7 @@ export interface PortFolioProps {
   description: string;
   qualification: string[];
   skill: string[];
+  tagList: string[];
   contact: string;
   impression: number;
 }
@@ -69,13 +72,14 @@ export interface PortFolioProps {
 
 export const portFolioMock: PortFolioProps[] = [
   {
-      userID: 1,
-      name: "田中太郎",
-      age: 25,
+      userID: 321,
+      name: "大竹智之　サイズチェック",
+      age: 20,
       gender: "男",
-      description: "初めまして、田中太郎です。よろしくお願いします。",
+      description: "高専での学びを通して、実践的なスキルと理論的な知識をバランスよく身につけました。<script>alert(XSS!)</script>特に、プロジェクトベースの学習では、チームでの協働や問題解決能力が鍛えられました。Pythonを用いたデータ解析や、Arduinoを使ったロボット製作など、実際の課題に取り組む中で、理論を実践に生かす力を養いました。今後は、これらの経験を基に、さらに専門的な技術を深め、社会に貢献できるエンジニアを目指していきたいと思います。",
       qualification:["Oracle Master","HTML", "CSS"],
       skill: ["HTML", "CSS"],
+      tagList: ["酒カス", "Pythonアンチ", "学校は家", "男女割合10:0","月3映画","サイズチェック","サイズチェック","サイズチェック","サイズチェック","サイズチェック","サイズチェック"],
       contact: "a@gmail.com",
       impression: 5
   },
@@ -87,6 +91,7 @@ export const portFolioMock: PortFolioProps[] = [
       description: "こんにちは、名前2です。よろしくお願いします。",
       qualification: ["MOS","FE", "危険物取扱者"],
       skill: ["HTML", "CSS", "JavaScript"],
+      tagList: ["Python", "Arduino"],
       contact: "b@gmail.com",
       impression: 4
   },
@@ -98,6 +103,7 @@ export const portFolioMock: PortFolioProps[] = [
     description: "こんにちは、名前3です。よろしくお願いします。",
     qualification: ["MOS","FE", "危険物取扱者"],
     skill: ["HTML", "CSS", "JavaScript"],
+    tagList: ["Python", "Arduino"],
     contact: "b@gmail.com",
     impression: 4
 },  {
@@ -108,6 +114,7 @@ export const portFolioMock: PortFolioProps[] = [
   description: "名前3",
   qualification: ["MOS","FE", "危険物取扱者"],
   skill: ["HTML", "CSS", "JavaScript"],
+  tagList: ["Python", "Arduino"],
   contact: "b@gmail.com",
   impression: 4
 },  {
@@ -118,6 +125,7 @@ export const portFolioMock: PortFolioProps[] = [
   description: "こんにちは、名前5です。よろしくお願いします。",
   qualification: ["MOS","FE", "危険物取扱者"],
   skill: ["HTML", "CSS", "JavaScript"],
+  tagList: ["Python", "Arduino"],
   contact: "b@gmail.com",
   impression: 4
 },

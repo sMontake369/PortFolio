@@ -1,8 +1,12 @@
+body {
+    margin: 0;
+}
+
 .backGround {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#43b28b, #1c44bd);
+    background: linear-gradient(#c4fbfc, #1b88ff);
 }
 
 .backGround h1 {
@@ -18,11 +22,32 @@
     text-align: center;
 }
 
-body {
-    margin: 0;
+.rectangle {
+    z-index: 1;
+    position: absolute;
+    top: 800px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #1f73d6;
+}
+
+.circle {
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    left: -50%;
+    top: 600px;
+    width: 200%;
+    height: 100%;
+    content: "";
+    background: #1f73d6;
+    border-radius: 50%;
+    box-shadow: 0px -100px 200px #1b88ff;
 }
 
 .homeContainer {
+    z-index: 10;
     width: 100%;
     height: 20vh;
     aspect-ratio: 1/0.55;
