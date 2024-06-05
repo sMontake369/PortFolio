@@ -1,47 +1,49 @@
 import NavBar from "./_components/header";
-import "./module.css";
+import styles from "./home.module.css";
 import Avatar from "boring-avatars";
-import { generateColors } from "./portFolio/page";
 
 function Home() {
   return (
-    <div className="backGround">
-      <div className= "rectangle"></div>
-      <div className= "circle"></div>
+    <div className={styles.backGround}>
+      <div className={styles.rectangle}></div>
+      <div className={styles.circle}></div>
       <NavBar>
-        <h1> Web Site Title</h1>
-        <h3>自分のラーニングポートフォリオが作れるサイト</h3>
-        <div className="loop">
+        <div className={styles.box}>
+          <div className={styles.title}>
+            <h1> Web Site Title</h1>
+            <h3>自分のラーニングポートフォリオが作れるサイト</h3>
+          </div>
+          <div className={styles.description}>
+            <p>自分のスキルや資格を紹介することができます。</p>
+            <p>他の人のポートフォリオも見ることができます。</p>
+          </div>
+        </div>
+        <div className={styles.loop}>
           <div className="box">
             {portFolioMock.map((portFolio) => (
               <div className="homeContainer" key={portFolio.userID}>
                 <a href={`/portFolio/${portFolio.userID}`}>
-                  <div className="info">
-                    <div className="profile">
+                  <div className={styles.info}>
+                    <div className={styles.profile}>
                       <h1>
                         {portFolio.name}
-                        <Avatar
-                          size={60}
-                          name={portFolio.userID.toString()}
-                          variant="beam"
-                          colors={generateColors(portFolio.userID)}/>
                       </h1>
                         <h3>姓:{portFolio.gender}&emsp;年齢:{portFolio.age}</h3>
                     </div>
                     <p>資格</p>
                     {portFolio.qualification.map((qualification) => (
-                      <div className="qualification" key={qualification}>
+                      <div className={styles.qualification} key={qualification}>
                         <p>{qualification}</p>
                       </div>
                     ))}
                     <p>スキル</p>
                     {portFolio.skill.map((skill) => (
-                      <div className="qualification" key={skill}>
+                      <div className={styles.qualification} key={skill}>
                         <p>{skill}</p>
                       </div>
                     ))}
                   </div>
-                  <div className="contact">
+                  <div className={styles.contact}>
                       {portFolio.contact}
                   </div>
                 </a>

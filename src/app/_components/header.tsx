@@ -1,15 +1,15 @@
-import "./header.css";
+import styles from "./header.module.css";
 import HamburgerMenu from "./hamburgerMenu.svg";
 
 export const NavBar = ({children}:any) => {
     return (
         <>
-            <div className="header">
-                <div className="title">
+            <div className={styles.header}>
+                <div className={styles.title}>
                     <a href="/">ポートフォリオ</a>
                 </div>
             </div>
-            <main className="main">{children}</main>
+            <main className={styles.main}>{children}</main>
         </>
     );
 };

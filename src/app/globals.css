@@ -21,6 +21,7 @@ body {
   background-color: var(--color-background);
   color: var(--color-primary);
   font-size: 16px;
+  margin: 0;
 }
 
 a {
