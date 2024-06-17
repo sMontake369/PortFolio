@@ -1,4 +1,4 @@
-import { DataBase, PortFolioProps } from "../page";
+import {DataBase,PortFolioProps} from "./Mock/mock"
 import styles from "./stickyNote.module.css";
 import Avatar from "boring-avatars";
 import Star from "./star.svg";

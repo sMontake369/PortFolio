@@ -1,4 +1,4 @@
-import { portFolioMock } from "../page";
+import {portFolioMock} from "../_components/Mock/mock"
 import { StickyNote } from "../_components/stickyNote";
 import styles from "./portFolio.module.css";
 import "../_components/stickyNote.module.css";
