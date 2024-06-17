@@ -1,6 +1,7 @@
 import NavBar from "./_components/header";
 import styles from "./home.module.css";
-import Avatar from "boring-avatars";
+import { StickyNote } from "./_components/stickyNote";
+import "./_components/stickyNote.module.css";
 
 function Home() {
   return (
@@ -14,43 +15,17 @@ function Home() {
             <h3>自分のラーニングポートフォリオが作れるサイト</h3>
           </div>
           <div className={styles.description}>
-            <p>自分のスキルや資格を紹介することができます。</p>
-            <p>他の人のポートフォリオも見ることができます。</p>
+            <p>説明</p>
+            <p>説明</p>
           </div>
         </div>
-        <div className={styles.loop}>
-          <div className="box">
-            {portFolioMock.map((portFolio) => (
-              <div className="homeContainer" key={portFolio.userID}>
-                <a href={`/portFolio/${portFolio.userID}`}>
-                  <div className={styles.info}>
-                    <div className={styles.profile}>
-                      <h1>
-                        {portFolio.name}
-                      </h1>
-                        <h3>姓:{portFolio.gender}&emsp;年齢:{portFolio.age}</h3>
-                    </div>
-                    <p>資格</p>
-                    {portFolio.qualification.map((qualification) => (
-                      <div className={styles.qualification} key={qualification}>
-                        <p>{qualification}</p>
-                      </div>
-                    ))}
-                    <p>スキル</p>
-                    {portFolio.skill.map((skill) => (
-                      <div className={styles.qualification} key={skill}>
-                        <p>{skill}</p>
-                      </div>
-                    ))}
-                  </div>
-                  <div className={styles.contact}>
-                      {portFolio.contact}
-                  </div>
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
+        <div className={styles.portFolioList}>
+					{portFolioMock.map((portFolio) => (
+						<div className={styles.portFolio} key={portFolio.userID}>
+							<a href={`/portFolio/${portFolio.userID}`}><StickyNote params={portFolio} /></a>
+						</div>
+					))}
+				</div>
       </NavBar>
     </div>
   );
