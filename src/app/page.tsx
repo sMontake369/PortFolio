@@ -21,7 +21,7 @@ function Home() {
             <p>説明</p>
           </div>
         </div>
-        <StickySlider></StickySlider> 
+        <StickySlider></StickySlider>
       </NavBar>
     </div>
   );
