@@ -1,10 +1,8 @@
-import {DataBase,PortFolioProps} from "../../_components/Mock/mock"
-import NavBar from "../../_components/header";
-
-import { StickyNote } from "../../_components/stickyNote";
-
-import "../../_components/stickyNote.module.css";
+import { DataBase, PortFolioProps } from "components/mock/mock"
+import { StickyNote } from "components/stickyNote";
+import NavBar from "components/header";
 import styles from "./userID.module.css"
+import "components/stickyNote.module.css";
 
 
 export const PortFolio = ({ params }: { params: { userID: number } }) => {

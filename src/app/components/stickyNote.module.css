@@ -61,11 +61,9 @@
 
 .userInfo {
   line-height: 70px;
+  font-size: clamp(25px, 2.5vw, 30px);
 }
 
-.userInfo h1 {
-  font-size: 70px;
-}
 
 .userInfo p {
   font-size: 30px;

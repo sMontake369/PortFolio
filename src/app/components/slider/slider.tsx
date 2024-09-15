@@ -1,11 +1,11 @@
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import styles from "./slider.module.css";
+import { StickyNote } from "../stickyNote";
+import {portFolioMock} from "../mock/mock"
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import styles from "./slider.module.css";
-import { StickyNote } from "../stickyNote";
-import {portFolioMock} from "../../_components/Mock/mock"
 
 const slideSettings = {
     0 : {
@@ -18,7 +18,7 @@ const slideSettings = {
     },
 }
 
-export default function StickySlider() {
+export function StickySlider() {
     return (
         <Swiper
             modules={[Autoplay, Navigation, Pagination]}

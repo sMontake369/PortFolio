@@ -25,15 +25,13 @@
 }
 
 .portFolioList {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
 }
 
 .portFolio {
-  width: 800px;
+  width: 500px;
   margin: 30px;
 }
 

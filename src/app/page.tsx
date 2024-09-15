@@ -1,9 +1,10 @@
 'use client';
 
-import NavBar from "./_components/header";
+import NavBar from "components/header";
+import {StickySlider} from "components/slider/slider";
 import styles from "./home.module.css";
-import "./_components/stickyNote.module.css";
-import StickySlider from "./_components/slider/slider"
+import "components/stickyNote.module.css";
+
 
 function Home() {
   return (

@@ -1,8 +1,8 @@
-import {portFolioMock} from "../_components/Mock/mock"
-import { StickyNote } from "../_components/stickyNote";
+import {portFolioMock} from "components/mock/mock"
+import { StickyNote } from "components/stickyNote";
+import "components/stickyNote.module.css";
 import styles from "./portFolio.module.css";
-import "../_components/stickyNote.module.css";
-import NavBar from "../_components/header";
+import NavBar from "components/header";
 
 export default function portFolio() {
   return (
