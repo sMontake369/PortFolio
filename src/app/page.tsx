@@ -1,9 +1,9 @@
 'use client';
 
 import NavBar from "components/header";
-import {StickySlider} from "components/slider/slider";
+import {CardSlider} from "components/slider/slider";
 import styles from "./home.module.css";
-import "components/stickyNote.module.css";
+import "components/businessCard.module.css";
 
 
 function Home() {
@@ -22,7 +22,7 @@ function Home() {
             <p>説明</p>
           </div>
         </div>
-        <StickySlider></StickySlider>
+        <CardSlider></CardSlider>
       </NavBar>
     </div>
   );

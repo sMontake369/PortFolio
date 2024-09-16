@@ -1,8 +1,8 @@
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./slider.module.css";
-import { StickyNote } from "../stickyNote";
-import {portFolioMock} from "../mock/mock"
+import { BusinessCard } from "../businessCard";
+import {folioMock} from "../mock/mock"
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -18,7 +18,7 @@ const slideSettings = {
     },
 }
 
-export function StickySlider() {
+export function CardSlider() {
     return (
         <Swiper
             modules={[Autoplay, Navigation, Pagination]}
@@ -30,9 +30,9 @@ export function StickySlider() {
             navigation={true}
         >
             <div className={styles.portFolioList}>
-            {portFolioMock.map((portFolio) => (
+            {folioMock.map((portFolio) => (
                 <SwiperSlide className={styles.portFolio} key={portFolio.userID}>
-                    <a href={`/portFolio/${portFolio.userID}`}><StickyNote params={portFolio} /></a>
+                    <a href={`/portFolio/${portFolio.userID}`}><BusinessCard params={portFolio} /></a>
                 </SwiperSlide>
             ))}
             </div>

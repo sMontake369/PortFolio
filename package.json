@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "boring-avatars": "^1.10.2",
+    "chart.js": "^4.4.4",
     "next": "14.2.1",
     "react": "^18",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18",
     "swiper": "^11.1.9"
   },

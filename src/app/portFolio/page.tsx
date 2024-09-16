@@ -1,6 +1,6 @@
-import {portFolioMock} from "components/mock/mock"
-import { StickyNote } from "components/stickyNote";
-import "components/stickyNote.module.css";
+import {folioMock} from "components/mock/mock"
+import { BusinessCard } from "components/businessCard";
+import "components/businessCard.module.css";
 import styles from "./portFolio.module.css";
 import NavBar from "components/header";
 
@@ -13,9 +13,9 @@ export default function portFolio() {
 					<input type="text" placeholder="検索" /> <button>検索</button>
 				</div>
 				<div className={styles.portFolioList}>
-					{portFolioMock.map((portFolio) => (
+					{folioMock.map((portFolio) => (
 						<div className={styles.portFolio} key={portFolio.userID}>
-							<a href={`/portFolio/${portFolio.userID}`}><StickyNote params={portFolio} /></a>
+							<a href={`/portFolio/${portFolio.userID}`}><BusinessCard params={portFolio} /></a>
 						</div>
 					))}
 				</div>

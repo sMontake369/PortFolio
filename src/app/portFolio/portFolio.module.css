@@ -27,12 +27,14 @@
 .portFolioList {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
 }
 
 .portFolio {
-  width: 500px;
+  width: 95%;
   margin: 30px;
+  transition: all 0.25s ease-out;
+  aspect-ratio: 2 / 1;
 }
 
 .portFolio a {
@@ -40,6 +42,6 @@
 }
 
 .portFolio:hover {
-  box-shadow: 10px 10px 10px 0.5px #e7e7e7;
-  transform: translateY(-0.1875em);
+  box-shadow: 10px 10px 10px 1px #e7e7e7;
+  transform: translateY(-2.5px);
 }
