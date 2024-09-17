@@ -14,16 +14,128 @@ export interface FolioProps {
   
 export const folioMock: FolioProps[] = [
 {
-    userID: 321,
-    name: "あいうえお かきくけこ さしすせそ たちつてと なにぬねの はひふへほ まみむめも やゆよ らりるれろ わをん",
+    userID: 0,
+    name: "高専 太郎",
     age: 20,
     gender: "男",
-    description: "高専での学びを通して、実践的なスキルと理論的な知識をバランスよく身につけました。<script>alert(XSS!)</script>特に、プロジェクトベースの学習では、チームでの協働や問題解決能力が鍛えられました。Pythonを用いたデータ解析や、Arduinoを使ったロボット製作など、実際の課題に取り組む中で、理論を実践に生かす力を養いました。今後は、これらの経験を基に、さらに専門的な技術を深め、社会に貢献できるエンジニアを目指していきたいと思います。",
+    description: "こんにちは",
     followQualifications:["Oracle Master","HTML", "CSS", "Oracle Master","HTML", "CSS"],
     followSkills: ["HTML", "CSS"],
     followTags: ["酒カス", "Pythonアンチ", "学校は家", "男女割合10:0","月3映画","サイズチェック","サイズチェック","サイズチェック","サイズチェック","サイズチェック","サイズチェック"],
     contacts: "a@gmail.com",
     impressions: 5
+},
+{
+    userID: 2,
+    name: "山田 花子",
+    age: 22,
+    gender: "女",
+    description: "よろしくお願いします",
+    followQualifications: ["Java", "JavaScript", "React"],
+    followSkills: ["JavaScript", "React"],
+    followTags: [
+        "アウトドア派", "アニメ好き", "読書好き", "月1旅行", "映画マニア", "サイズチェック"
+    ],
+    contacts: "b@gmail.com",
+    impressions: 3
+},
+{
+    userID: 3,
+    name: "鈴木 一郎",
+    age: 25,
+    gender: "男",
+    description: "趣味はサッカーです",
+    followQualifications: ["Python", "Django", "AWS"],
+    followSkills: ["Python", "Django"],
+    followTags: [
+        "サッカー好き", "Pythonプロ", "アウトドア派", "月5映画", "技術オタク", "サイズチェック"
+    ],
+    contacts: "c@gmail.com",
+    impressions: 7
+},
+{
+    userID: 4,
+    name: "佐藤 二郎",
+    age: 28,
+    gender: "男",
+    description: "釣りが好きです",
+    followQualifications: ["PHP", "Laravel", "MySQL"],
+    followSkills: ["PHP", "MySQL"],
+    followTags: [
+        "釣り好き", "アウトドア派", "一人旅好き", "ラーメン好き", "月3映画", "サイズチェック"
+    ],
+    contacts: "d@gmail.com",
+    impressions: 6
+},
+{
+    userID: 5,
+    name: "伊藤 三郎",
+    age: 30,
+    gender: "男",
+    description: "旅行が趣味です",
+    followQualifications: ["Go", "Kubernetes", "Docker"],
+    followSkills: ["Go", "Docker"],
+    followTags: [
+        "旅行好き", "読書家", "アウトドア派", "技術マニア", "月2映画", "サイズチェック"
+    ],
+    contacts: "e@gmail.com",
+    impressions: 8
+},
+{
+    userID: 6,
+    name: "田中 四郎",
+    age: 27,
+    gender: "男",
+    description: "映画好きです",
+    followQualifications: ["Ruby", "Rails", "JavaScript"],
+    followSkills: ["Ruby", "Rails"],
+    followTags: [
+        "映画好き", "アニメファン", "コーヒー好き", "月3映画", "読書家", "サイズチェック"
+    ],
+    contacts: "f@gmail.com",
+    impressions: 4
+},
+{
+    userID: 7,
+    name: "渡辺 五郎",
+    age: 24,
+    gender: "男",
+    description: "読書が趣味です",
+    followQualifications: ["SQL", "Azure", "Node.js"],
+    followSkills: ["SQL", "Node.js"],
+    followTags: [
+        "読書家", "映画ファン", "猫好き", "インドア派", "月1映画", "サイズチェック"
+    ],
+    contacts: "g@gmail.com",
+    impressions: 3
+},
+{
+    userID: 8,
+    name: "木村 六郎",
+    age: 26,
+    gender: "男",
+    description: "アウトドア好きです",
+    followQualifications: ["HTML", "CSS", "JavaScript"],
+    followSkills: ["HTML", "CSS"],
+    followTags: [
+        "アウトドア派", "映画好き", "技術者", "男女割合9:1", "月3映画", "サイズチェック"
+    ],
+    contacts: "h@gmail.com",
+    impressions: 9
+},
+{
+    userID: 9,
+    name: "小林 七子",
+    age: 23,
+    gender: "女",
+    description: "アニメ好きです",
+    followQualifications: ["React", "Vue", "Angular"],
+    followSkills: ["React", "Vue"],
+    followTags: [
+        "アニメファン", "漫画好き", "インドア派", "読書家", "月4映画", "サイズチェック"
+    ],
+    contacts: "i@gmail.com",
+    impressions: 2
 },
 {
     userID: 100,

@@ -1,15 +1,14 @@
 .businessCard {
   position: relative;
   width: 100%;
-  min-width: 500px;
+  min-width: 50px;
   height: 100%;
-  min-height: 250px;
+  min-height: 25px;
   background: #f6f6f6;
-  box-shadow: 5px 5px 5px 1px #ececec;
-  /* outline: solid 1px #50514e; */
+  /* outline: solid 2px #50514e; */
   overflow: hidden;
   color: #454555;
-  border-radius: 2px;
+  border-radius: 1px;
 }
 
 .icon {
@@ -29,8 +28,8 @@
 
 .radarChart {
   width: 50%;
-  height: 100%;
-  margin: 5px;
+  height: 95%;
+  margin: 10px;
 }
 
 .userInfo {
@@ -71,8 +70,8 @@
 }
 
 .qualificationList {
-  margin-top: 10%;
   font-size: 15px;
+  margin-top: 10px;
 }
 
 .qualificationList p {

@@ -48,17 +48,7 @@
     color: #fff;
 }
 
-.portFolioList {
+.slider {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.portFolio {
-    width: 700px;
-    transform: scale(0.5,0.5);
-}
-
-.portFolio a {
-    text-decoration: none;
+    justify-content: center;
 }

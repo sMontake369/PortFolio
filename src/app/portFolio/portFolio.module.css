@@ -24,24 +24,25 @@
   font-size: 20px;
 }
 
-.portFolioList {
+.businessCardList {
   display: grid;
   place-items: center;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
 }
 
-.portFolio {
+.businessCard {
   width: 95%;
   margin: 30px;
-  transition: all 0.25s ease-out;
-  aspect-ratio: 2 / 1;
+  transition: all 0.2s ease-out;
+  aspect-ratio: 5 / 3;
+  box-shadow: 2px 5px 5px #a4a4a4;
 }
 
-.portFolio a {
+.businessCard a {
   text-decoration: none;
 }
 
-.portFolio:hover {
-  box-shadow: 10px 10px 10px 1px #e7e7e7;
-  transform: translateY(-2.5px);
+.businessCard:hover {
+  box-shadow: 10px 15px 10px 1px #e7e7e7;
+  transform: translateY(-8px);
 }

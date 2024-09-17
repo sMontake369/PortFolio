@@ -12,9 +12,9 @@ export default function portFolio() {
 				<div className={styles.searchBar}>
 					<input type="text" placeholder="検索" /> <button>検索</button>
 				</div>
-				<div className={styles.portFolioList}>
+				<div className={styles.businessCardList}>
 					{folioMock.map((portFolio) => (
-						<div className={styles.portFolio} key={portFolio.userID}>
+						<div className={styles.businessCard} key={portFolio.userID}>
 							<a href={`/portFolio/${portFolio.userID}`}><BusinessCard params={portFolio} /></a>
 						</div>
 					))}

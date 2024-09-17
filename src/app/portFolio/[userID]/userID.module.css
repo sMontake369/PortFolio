@@ -1,6 +1,6 @@
 .portFolioWrap {
-  width: min(70vw, 1000px);
-  min-width: 700px;
+  width: min(500px, 1000px);
+  aspect-ratio: 5 / 3;
 }
 
 .note {

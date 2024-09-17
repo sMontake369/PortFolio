@@ -22,7 +22,9 @@ function Home() {
             <p>説明</p>
           </div>
         </div>
-        <CardSlider></CardSlider>
+        <div className={styles.slider}>
+          <CardSlider></CardSlider>
+        </div>
       </NavBar>
     </div>
   );
