@@ -1,14 +1,13 @@
-.page-container {
+.loginHeader {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; /* ビューポート全体の高さにする */
-  background-color: #5990b2; /* バックグラウンド色を設定（必要に応じて変更） */
   margin: 0;
 }
 
 .login {
-  background-color: #edfaff;
+  background-color: #a1beca;
   text-align: center;
   padding: 50px;
   border-radius: 10px;
@@ -23,7 +22,7 @@
 }
 
 .login h1 {
-  color: #4dab33;
+  color: #242424;
   font-size: 30px;
   margin-bottom: 20px;
 }
