@@ -1,0 +1,53 @@
+.businessCardRear {
+  position: relative;
+  width: 100%;
+  min-width: 500px;
+  aspect-ratio: 5/3;
+  min-height: 25px;
+  background: #f6f6f6;
+  overflow: hidden;
+  color: #454555;
+}
+
+.description {
+  overflow: hidden;
+  margin: 0px 20px 0 20px;
+  position: relative;
+  width: calc(100% - 40px);
+  height: calc(90% - 130px);
+  font-size: 20px;
+  line-height: 2em;
+  background-image: linear-gradient(90deg, transparent 0%, transparent 50%, #f6f6f6 50%, #f6f6f6 100%), 
+  linear-gradient(180deg, #898989 1px, transparent 1px);
+  background-size: 20px 100%, 100% 2em;
+}
+
+.businessCardRear h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 10px 20px;
+}
+
+.information {
+  font-size: 20px;
+  margin:10px;
+  width: calc(100% - 20px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.impression {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.contacts {
+  display: flex;
+  width: 500px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  height: auto;
+}
+

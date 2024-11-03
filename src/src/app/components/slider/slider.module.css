@@ -1,0 +1,12 @@
+.customSwiperWrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-slide {
+  padding: 50px;
+}
+
+.businessCard {
+  transition: all 0.2s ease-out !important;
+  margin: 1em;
+}

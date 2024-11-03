@@ -1,0 +1,37 @@
+.panelWrap {
+  transition: .7s;
+}
+
+.BusinessCard {
+  position: relative;
+  width: 900px;
+  aspect-ratio: 5 / 3;
+  border-radius: 2px;
+}
+
+.BusinessCard div{
+  transition: .7s;
+  backface-visibility: hidden;
+}
+
+.BusinessCardFront {
+  width: 100%;
+  position:absolute;
+  border: 1px solid #000000;
+}
+
+.BusinessCardRear {
+  width: 100%;
+  position:absolute;
+  border: 1px solid #000000;
+}
+
+.BusinessCard:hover {
+  transform:
+    rotateX(calc((var(--ratio-x) - 0.5) * 20deg))
+    rotateY(calc((var(--ratio-y) - 0.5) * -20deg));
+}
+
+.rotated {
+  transform: rotateY(180deg);
+}
